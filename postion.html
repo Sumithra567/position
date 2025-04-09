@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+           margin: 20px;
+           display: flex;
+           flex-direction: row;
+           
+        }
+        /* p{
+            display: inline-block;
+            
+
+        } */
+        body{
+            margin: 0;
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        .wrapper{
+            visibility: hidden;
+            position: absolute;
+            background-color: black;
+            color:white;
+            height: 400px;
+            width: 250px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            border-top-left-radius: 10px;
+
+        }
+        .container:hover .wrapper{
+            visibility: visible;
+            left: 100px;
+        }
+        .para{
+            color:white;
+        }
+        .navbar{
+    
+    background-color: rgb(224, 153, 47);
+    position: fixed;
+    top: 0;
+    left:35%;
+    
+}
+a{
+    margin-right: 50px;
+    
+}
+.container:hover p{
+    background-color: rgb(238, 157, 37);
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="https://en.wikipedia.org/wiki/HTML">HTML</a>
+        <a href="https://en.wikipedia.org/wiki/CSS">CSS</a>
+        <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">PYTHON</a>  
+     </nav> 
+    <div class="container">
+        <p>HTML</p>
+        <div class="wrapper">
+            <p>HTML</p>
+            <img src="https://th.bing.com/th?q=Public+Imag+of+HTML&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.5&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="html image" height="150" width="250px">
+            <p class="para">HTML, or Hypertext Markup Language, is the standard markup language used to create and design web pages. It defines the structure and layout of a web page by using a variety of tags and attributes. HTML is one of the core technologies of the web, alongside CSS and JavaScript</p>
+        </div>
+        
+    </div>
+    <div class="container">
+        <p>CSS</p>
+        <div class="wrapper">
+            <p>CSS</p>
+            <img src="data:image/jpeg;base64,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" alt="css image" height="150" width="250px">
+            <p class="para">CSS, or Cascading Style Sheets, is a language used to describe the presentation of a document written in HTML or XML. It controls the layout, colors, fonts, and overall visual appearance of web pages. By separating content from design, CSS makes it easier to maintain and update websites.</p>
+        </div>
+        
+    </div>
+    <div class="container">
+        <p>PYTHON</p>
+        <div class="wrapper">
+            <p>PYTHON</p>
+            <img src="https://th.bing.com/th/id/OIP.XTRl4rwNqniKlEtc6swCMgHaE8?rs=1&pid=ImgDetMain" alt="python image" height="150" width="250px">
+            <p class="para">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. It was created by Guido van Rossum and first released in 1991
+                . Python's design philosophy emphasizes code readability and simplicity, making it an excellent choice for both beginners and experienced developers</p>
+        </div>
+        
+    </div>
+</body>
+</html>
